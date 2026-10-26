@@ -1,28 +1,36 @@
-# Scraper-Selenium
+<img src="assets/banner.svg" width="100%" alt="Web Data Extraction to the Cloud. A configurable scraper for UK supplement retailers, from search bar to cloud storage and a database.">
 
-Scrap any **UK** supplement website with a search bar !!!!
+## The idea
 
-                        prerequisites:
-pip install selenium                        
+Scrape **any UK supplement website that has a search bar**, then land the results in the cloud: product data as JSON and images with unique IDs in **Amazon S3**, and tabular data in a relational database (Amazon RDS) through SQLAlchemy.
 
+## What is inside
+
+1. **Decorators** for timed, retried page interactions
+2. A **pivottablejs** GUI to explore the data stored on your path
+3. A small **user interface** (tkinter dialogs) for the run's settings and credentials
+4. **Universal functions** for all supplement websites, working as a control panel
+5. Creation of **local folders** for saving multiple datasets
+6. **Continuous scraping** of a given website
+7. **Amazon RDS and S3** for the stored information: JSON files and images with unique IDs
+
+## Run it
+
+Prerequisites:
+
+```bash
+pip install selenium
 pip install tk
-
-pip instal pivottablejs
-
+pip install pivottablejs
 pip install pandas
+```
 
-                        bonus elements:
+Then run [`scraper.py`](scraper.py). The AWS and database credentials are asked for at runtime in dialogs and are never stored in the code.
 
-1.decorators 
+## Built with
 
-2.pivottablejs gui to experiment with your data stored into your path !!!
+`Python` · `Selenium` · `pandas` · `SQLAlchemy` · `boto (S3)` · `tkinter` · `pivottablejs`
 
-3.user interface
+<br>
 
-4.universal functions for all supplement websites (working as a control panel)
-
-5.creation of local folders for saving multiple data
-
-6.infinite scrapping of given website
-
-7.AMAZON RDS-BUCKET utilization for stored info (json files, images with unique ids) 
+<p align="center"><sub>Part of the work of <a href="https://github.com/johnnyk1090">Giannis Konteas</a> · end-to-end data science</sub></p>
