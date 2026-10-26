@@ -33,4 +33,4 @@ Then run [`scraper.py`](scraper.py). The AWS and database credentials are asked 
 
 <br>
 
-<p align="center"><sub>Part of the work of <a href="https://github.com/johnnyk1090">Giannis Konteas</a> · end-to-end data science</sub></p>
+<p align="center"><sub>Part of the work of <a href="https://github.com/johnnyk1090">John Konteas</a> · end-to-end data science</sub></p>
